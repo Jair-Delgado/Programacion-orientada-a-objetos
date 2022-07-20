@@ -8,7 +8,7 @@ class Persona{
     //Metodos se definen de una funcion
     public function hablar($mensaje){
         
-            echo $mensaje .;
+            echo $mensaje;
     }
 
     
