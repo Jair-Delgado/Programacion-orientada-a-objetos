@@ -11,4 +11,4 @@
   * Métodos: Crear, Eliminar, Editar, Ver
   * Atributos: ID, Titulo, Contenido, Fecha
   */
-  ?>
+  
