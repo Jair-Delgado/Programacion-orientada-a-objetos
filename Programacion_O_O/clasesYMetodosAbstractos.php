@@ -5,8 +5,9 @@
  * Una clase abstracta tiene por objetivo agrupar atributos y métodos que 
  * seran heredados por otras subclases 
  * 
- * Las clases definidas como abstractas no se pueden instanciar y cualquier clase
- * que contiene al menos un metodo abstracto debe ser definido como tal.
+ * Las clases definidas como abstractas no se pueden instanciar y
+ * cualquier clase que contiene al menos un metodo abstracto debe ser 
+ * definido como tal.
  * 
  * METODOS ABSTRACTOS
  * Si queremos que las subclases implementen comportamientos obligatoriamente  podemos definir 
@@ -17,6 +18,8 @@
 
  //las clasesm y metodos abstractos se definen con la palabra abstract
  abstract class Molde{
+
+    //Cuando se declaran metodos abstractos no deben tener cuerpo '{}', deben terminar con ; 
     abstract public function ingresaNombre($nombre);
     abstract public function obtenerNombre();
  }
@@ -33,6 +36,7 @@
         $this->nombre = $nombre;
         
     }
+    //Cuando los métodos abstractos son llamados ya pueden tener cuerpo {}
     public function obtenerNombre(){
         print $this->nombre;
     }

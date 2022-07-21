@@ -6,9 +6,8 @@
  * instancia.
  * Un metodo estatico se puede llamar sin tener que crear un objeto de dicha clase.
  * 
- * Una propiedad declarada como static no puede ser accedida con un objeto de clase instanciado 
- * aunque 
- * un metodo estatico si lo puede hacer
+ * Un atributo declarada como static no puede ser accedida con un objeto 
+ * de clase instanciado aunque un metodo estatico si lo puede hacer
  * 
  * IMPORTANTE
  * 
@@ -17,8 +16,9 @@
  * Indicamos primero el nombre de la clase, luego el operador :: y por ultimo indicamos el 
  * nombre de método estático a llamar.
  * 
- * Las propiedades estáticas no pueden ser accedidas a través del objeto utilizando el operador 
- * flecha (->)
+ * -IMPORTANTE-
+ * Las propiedades estáticas no pueden ser accedidas a través del objeto utilizando el 
+ * operador flecha (->)
  */
 
 class Pagina{

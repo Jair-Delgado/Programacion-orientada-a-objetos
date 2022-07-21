@@ -10,6 +10,6 @@ spl_autoload_register('autoload');
 
 //llamamos al metodo de la clase de la carpeta Clases en el archivo personas.php 
 //la clase debe ser static para poder invocarla con este método
-persona::mostrar("ya voy entendiendo php");//la persona dice: ya voy entendiendo php
+Persona::mostrar("ya voy entendiendo php <br>");//la persona dice: ya voy entendiendo php
 //metodo de la clase auto de la carpeta Clases del archivo auto.php
-auto::ver("brrrr!");//El auto dice: brrr!
+Auto::ver("brrrr!");//El auto esta dicendo: brrr!
