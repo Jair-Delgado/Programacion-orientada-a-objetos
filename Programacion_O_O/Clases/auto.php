@@ -1,7 +1,7 @@
 <?php
 
 class Auto {
-    public function ver($mensaje){
+    public static function ver($mensaje){
         echo "El auto esta diciendo: $mensaje";
     }
 }
