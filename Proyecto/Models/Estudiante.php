@@ -14,6 +14,15 @@ class Estudiante {
          $this->con = new Conexion();
     }
 
+    public function set($atributo, $contenido)
+    {
+        $this->$atributo->$contenido;
+    }
+    public function get($atributo)
+    {
+        $this->$atributo;
+    }
+
     public function listar()
     {
         $sql ="SELECT t1.*, t2.nombre as nombre_seccion FROM estudiantes
@@ -44,9 +53,11 @@ class Estudiante {
     public function view()
     {
         $sql ="SELECT t1.*, t2.nombre as nombre_seccion FROM estudiantes t1 INNER JOIN
-         secciones t2 ON t1.id_seccion = t2.id WHERE id = '{$this->id}'";
-        $datos = $this->con->consultaRetorno("sql");
-        return $datos;
+         secciones t2 ON t1.id_seccion = t2.id WHERE id.t1 = '{$this->id}'";
+         $datos = $this->con->consultaRetorno("sql");
+         $row = pg_fetch_row($datos);
+         return $row;
+        //return $datos;
     }
     
 }
